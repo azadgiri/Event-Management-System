@@ -1,0 +1,20 @@
+{% extends 'events/base.html' %}
+
+{% block content %}
+    <h2 style="margin-bottom: 1.5rem;">Upcoming Events</h2>
+    
+    {% if events %}
+        {% for event in events %}
+            <div class="card">
+                <h3>{{ event.title }}</h3>
+                <p class="meta">📍 {{ event.location }} | 🗓️ {{ event.date }} at {{ event.time }}</p>
+                <p style="margin-bottom: 1rem;">{{ event.description|truncatewords:20 }}</p>
+                <a href="{% url 'event_detail' event.id %}" class="btn">View Details & Register</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="card" style="text-align: center; padding: 3rem;">
+            <p>No upcoming events found. Check back later!</p>
+        </div>
+    {% endif %}
+{% endblock %}

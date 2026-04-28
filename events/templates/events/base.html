@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="{% static 'events/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Event Management App</h1>
+            <p class="subtitle">Find and register for upcoming events</p>
+        </header>
+        
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        
+        <footer style="text-align: center; margin-top: 3rem; color: var(--text-muted); font-size: 0.8rem;">
+            &copy; 2026 Basic Event System. <a href="{% url 'admin:index' %}">Admin Panel</a>
+        </footer>
+    </div>
+</body>
+</html>
