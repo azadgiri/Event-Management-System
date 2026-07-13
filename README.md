@@ -89,6 +89,5 @@ The primary goal of this project is to demonstrate the development of a complete
 
 ## 👨‍💻 Developer
 
-**Azad Giri**
 
 Built with ❤️ using **Python** and **Django**.
