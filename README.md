@@ -2,7 +2,7 @@
 
 ## 📖 Overview
 
-This project is a dynamic web application developed using the **Django Framework** and **Python**. It follows the **Model-View-Template (MVT)** architecture to provide a secure, scalable, and efficient solution for managing web-based operations. The application is designed with a clean user interface, organized backend logic, and database integration to deliver a smooth user 
+This project is a dynamic web application developed using the **Django Framework** and **Python**. It follows the **Model-View-Template (MVT)** architecture to provide a secure, scalable, and efficient solution for managing web-based operations. The application is designed with a clean user interface, organized backend logic, and database integration to deliver a smooth user experience.
 
 ## ✨ Key Features
 
